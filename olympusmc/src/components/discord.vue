@@ -69,6 +69,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+@media screen and (max-width:768px) {
+  .Discord-container{
+    background-attachment: inherit;
+  }
+}
 @media screen and (max-width: 348px){
   .Discord-widget{
     display: none;

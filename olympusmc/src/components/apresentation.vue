@@ -109,6 +109,11 @@ export default {
   bottom: -17px;
   right: 150px;
 }
+@media screen and (max-width:768px) {
+  .Apresentation-container{
+    background-attachment: inherit;
+  }
+}
 @media screen and (max-width: 650px) {
     .Apresentation-description-container{
       margin-left: -4rem;
