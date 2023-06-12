@@ -5,7 +5,7 @@
       <div class="Apresentation-block-2"></div>
       <div class="Apresentation-block-3"></div>
       <div class="Apresentation-block-4"></div>
-      <h1>OLYMPUS MC</h1>
+      <h1 class="Apresentation-container-title">OLYMPUS MC</h1>
       <p class="Apresentation-description-text">
         A melhor comunidade e o melhor servidor rpg que você pode jogar agora
         mesmo, sempre sendo atualizado, premiações perfeitas e bastante conteúdo
@@ -109,5 +109,46 @@ export default {
   bottom: -17px;
   right: 150px;
 }
+@media screen and (max-width: 650px) {
+    .Apresentation-description-container{
+      margin-left: -4rem;
+      margin: auto;
+    }
+    .Apresentation-container{
+      padding: 0;
+    }
+}
+@media screen and (max-width:534px){
+  .Apresentation-description-container{
+    width: 400px;
+   
+  }
+}
+@media screen and (max-width: 428px){
+  .Apresentation-description-container{
+    width: 300px;
+  }
+  .Apresentation-container-title{
+    font-size: 1.3rem;
+  }
+  .Apresentation-description-text{
+    font-size: 0.9rem;
+  }
+  .Apresentation-block-2{
+    right: -20px;
+    width: 55px;
+  }
+  .Apresentation-description-button{
+    font-size: 0.7rem;
+  }
+  .Apresentation-block-3{
+    right: 200px;
+  }
+}
+@media screen and (max-width: 339px){
+  .Apresentation-block-2{
+    right: -7px;
+  }
+  }
 
 </style>

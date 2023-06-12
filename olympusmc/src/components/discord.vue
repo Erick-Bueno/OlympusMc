@@ -18,9 +18,18 @@
 }
 .Discord-title{
     font-family: mine;
-    padding-top: 4rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin-top: 4rem;
+ 
+    font-family: mine;
+   background-color: rgb(222, 157, 168);
+   color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.52);
+  border: 3px solid rgb(220, 180, 187);
+  border-radius: 5px;
+
     
 }
 .Discord-widget{
@@ -54,11 +63,18 @@
     background-image: url("/public/images/fundo2.jpg");
     color: white;
     padding-bottom: 4rem;
-    margin-bottom: 2rem;
+    padding-top: 1rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-    
+@media screen and (max-width: 348px){
+  .Discord-widget{
+    display: none;
+  }
+  .Discord-title{
+    font-size: 0.7rem;
+  }
+}
 </style>

@@ -60,6 +60,28 @@ export default {
   padding: 0.5rem;
   margin-top: 2rem;
 }
-
-
+@media screen and (max-width: 428px){
+  .about-serverip{
+    font-size: 0.7rem;
+  }
+  .about-description{
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 367px){
+  .about-serverip{
+    font-size: 0.6rem;
+  }
+  .about-title{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px){
+  .about-title{
+    font-size: 1rem;
+  }
+  .about-serverip{
+    font-size: 0.5rem;
+  }
+}
 </style>

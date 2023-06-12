@@ -109,7 +109,7 @@ export default {
   padding: 1.5rem;
 }
 .Ranking-table-container {
-  width: 400px;
+  max-width: 400px;
   background-color: rgba(16, 146, 186, 0.459);
   margin-top: 2rem;
   margin-left: auto;
@@ -120,7 +120,7 @@ table{
 }
 td{
     padding: 1rem;
-    width: 120px;
+    width: 100px;
     font-family: "Manrope", sans-serif;
     font-weight: bolder;
    
@@ -162,4 +162,8 @@ table{
 .Ranking-table-field-num{
     color: rgba(0, 0, 0, 0.381);
 }
+@media screen and(max-width:356px) {
+ 
+}
+
 </style>

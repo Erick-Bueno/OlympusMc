@@ -1,5 +1,7 @@
 <template>
   <header>
+    <div class="overlay" @click="fecharMenu()" :class="{'mostraroverlay':menuAtivado}"></div>
+    <img class="Header-menu-mobile" @click="abrirMenu()" src="/images/hamburguer.png" alt="">
     <div class="Header-playersOn">
       <img
         class="Header-logo"
@@ -11,9 +13,11 @@
           <p class="Header-text-playerson">10 PLAYERS ONLINE</p>
       </div>
     </div>
-    <div class="Header-container-nav">
+    <div class="Header-container-nav" :class="{'menuAberto':menuAtivado}">
+      <h1 class="olympus">OLYMPUS MC</h1>
       <nav>
         <ul class="Header-container-list">
+        
           <li>LOJA</li>
           <li>RANKING</li>
           <li>CONTATOS</li>
@@ -21,7 +25,7 @@
         </ul>
       </nav>
       <div class="Header-container-singup">
-        <p>LOGIN/SINGUP</p>
+        <p class="login">LOGIN/SINGUP</p>
         <img class="Header-image-arrow" src="/images/setadireita.png" alt="" />
       </div>
     </div>
@@ -30,6 +34,22 @@
 <script>
 export default {
   name: "header",
+  data(){
+    return{
+      menuAtivado: false
+    }
+   
+  },
+  methods:{
+    abrirMenu(){
+      this.menuAtivado = true
+      document.body.style.overflow = "hidden"
+    },
+    fecharMenu(){
+      this.menuAtivado = false
+      document.body.style.overflowY = "scroll"
+    }
+  }
 };
 </script>
 <style>
@@ -51,17 +71,46 @@ header {
   position: fixed;
   transition: 0.2s ease-in-out;
   z-index: 2000;
+  
  
 
 }
+.olympus{
+  display: none;
+}
+.Header-menu-mobile{
+  position: absolute;
+  right: 0;
+  display: none;
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.655);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+
+}
+.mostraroverlay{
+  display: block;
+}
 .Header-logo {
   width: 120px;
+}
+.menuAberto{
+
 }
 .Header-playersOn {
   display: flex;
   align-items: center;}
 .Header-container-list {
   list-style: none;
+  display: flex;
+}
+.login{
+  
   display: flex;
 }
 .Header-container-list li{
@@ -117,5 +166,133 @@ header {
     right: -25px;
     bottom: 3px;
 }
+@media screen and (max-width: 768px) {
+  .Header-menu-mobile{
+    display: block;
+    margin-right: 1rem;
+ 
+  }
+  .Header-container-nav{
+    position: fixed;
+    flex-direction: column;
+    background-color:white;
+    right: 0;
+    top: 0;
+    width: 0%;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: right;
+  
+    color: black;
+    z-index: 2000;
+    margin-left:-12rem;
+    transition: 0.2s ease-in-out;
+
+  }
+  .Header-container-nav.menuAberto{
+    width: 60%;
+  }
+  .Header-container-list{
+    flex-direction: column;
+    float: left;
+   
+  }
+  .Header-container-list li {
+    margin: 1rem;
+  
+    width: 50px;
+ 
+
+    
+  }
+  .olympus{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+  }
+  .login{
+   
+  }
+  .Header-container-singup{
+    margin-left: -5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .Header-image-arrow{
+    width: 32px;
+    top: 10px;
+    right: -50px;
+  }
+  nav{
+    margin-left: -12rem;
+  }
+
+}
+@media screen and (max-width: 530px){
+  .Header-container-singup{
+    margin-left: -5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    margin-top: 5rem;
+  }
+  .Header-image-arrow{
+    width: 22px;
+    top: 5px;
+    right: -30px;
+  }
+  .olympus{
+    font-size: 1.3rem;
+  }
+  .Header-text-playerson{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 428px){
+  nav{
+    margin-left: -9rem;
+  }
+  .Header-logo{
+    width: 52px;
+  }
+  .Header-menu-mobile{
+    width: 42px;
+  }
+  
+}
+@media screen and (max-width: 375px){
+  .olympus{
+    font-size: 1.2rem;
+  }
+  .login{
+    font-size: 1rem;
+  
+  }
+  .Header-image-arrow{
+    top: 2px;
+    
+  }
+}
+@media screen and (max-width: 348px){
+  nav{
+    margin-left:-6rem ;
+  }
+  .olympus{
+    font-size: 1.2rem;
+  }
+  .login{
+    font-size: 1rem;
+  }
+  .Header-image-arrow{
+    top: 2px;
+    right: -25px;
+  }
+}
+
 
 </style>
