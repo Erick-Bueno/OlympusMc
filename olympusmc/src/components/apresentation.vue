@@ -49,7 +49,7 @@ export default {
   background-color: #4c1db1;
   color: white;
   font-size: 2rem;
-  width: 500px;
+  max-width: 500px;
   padding: 3rem;
   position: relative;
   margin-left: 4rem;
