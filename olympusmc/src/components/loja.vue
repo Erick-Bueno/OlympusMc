@@ -1,5 +1,5 @@
 <template>
-  <section class="Shop-containe-geral">
+  <section id="shop" class="Shop-containe-geral">
     <h1 class="Shop-title">LOJA</h1>
     <section class="Shop-container">
       <div class="Shop-card-container">

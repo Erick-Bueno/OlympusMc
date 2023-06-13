@@ -65,7 +65,7 @@ export default {
 }
 .Apresentation-description-button {
   font-family: mine;
-  background-color: rgb(222, 157, 168);
+  background-color: rgb(133, 99, 104);
   border: none;
   color: white;
   padding: 0.7rem;
@@ -73,7 +73,7 @@ export default {
   z-index: 1000;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.52);
   margin-top: 3rem;
-  border: 3px solid  rgb(220, 180, 187);
+  border: 3px solid  rgb(176, 146, 151);
   border-radius: 5px;
   cursor: text;
 }

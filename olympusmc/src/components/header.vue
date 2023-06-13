@@ -18,10 +18,11 @@
       <nav>
         <ul class="Header-container-list">
         
-          <li>LOJA</li>
-          <li>RANKING</li>
-          <li>CONTATOS</li>
-          <li>SOBRE</li>
+          <li><a href="#shop">LOJA</a></li>
+          <li><a href="#ranking">RANKING</a></li>
+          <li><a href="#footer">CONTATOS</a></li>
+          <li><a href="#discord">DISCORD</a></li>
+          <li><a href="#about">SOBRE</a></li>
         </ul>
       </nav>
       <div class="Header-container-singup">
@@ -83,6 +84,10 @@ header {
   right: 0;
   display: none;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .overlay{
   background-color: rgba(0, 0, 0, 0.655);
   height: 100vh;
@@ -118,7 +123,7 @@ header {
     cursor: pointer;
     transition: 0.2s;
 }
-.Header-container-list li:hover{
+a:hover{
   color: rgba(0, 0, 0, 0.53);
 }
 .Header-container-singup {

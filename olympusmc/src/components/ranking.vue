@@ -1,5 +1,5 @@
 <template>
-  <section class="Ranking-container">
+  <section id="ranking" class="Ranking-container">
     <h1 class="Ranking-title">RANKING</h1>
     <article class="Ranking-table-container">
       <p class="Ranking-table-title">TOP MONEY</p>

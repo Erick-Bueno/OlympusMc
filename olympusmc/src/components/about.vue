@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section id="about" class="about">
       <h1 class="about-title">SOBRE OLYMPUS MC</h1>
       <P class="about-description"
         >Servidor feito a partir de um sonho de montar bloquinhos misturado com
@@ -50,10 +50,10 @@ export default {
 
   font-family: mine;
   color: rgba(0, 0, 0, 0.546);
-  background-color: rgb(222, 157, 168);
+  background-color:  rgb(133, 99, 104);
   color: white;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.52);
-  border: 3px solid rgb(220, 180, 187);
+  border: 3px solid rgb(176, 146, 151);
   border-radius: 5px;
   cursor: text;
   height: 100%;

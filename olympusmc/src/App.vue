@@ -47,10 +47,12 @@ export default {
   padding: 0rem;
   margin: 0rem;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .container-top {
   flex: 1;
 }
+
 .container-geral {
   min-height: 100vh;
   display: flex;

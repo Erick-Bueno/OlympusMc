@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer-container">
+    <footer id="footer" class="footer-container">
         <p>&copy;{{ date }} Olympus MC Todos os Direitos Reservados</p>
         <p>Contato: olympusmcstaf@gmail.com</p>
     </footer>
