@@ -8,7 +8,7 @@
         repleto de desafios envolvendo: dungeons, bosses e muito mais, venha
         fazer parte da nossa familia.
       </P>
-      <p class="about-serverip">SERVER IP: olympusmc.jogar.com.br</p>
+      <p class="about-serverip">SERVER IP: olympusmc.enxada.host</p>
   </section>
 </template>
 <script>
