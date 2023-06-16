@@ -86,7 +86,7 @@ export default {
   top: 150px;
 }
 .Apresentation-block-2{
-  width: 80px;
+  width: 30px;
   height: 80px;
   background-color:  #4c1db1;
   position: absolute;
