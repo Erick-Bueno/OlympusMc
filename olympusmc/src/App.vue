@@ -1,10 +1,10 @@
 <template>
   <section class="container-geral">
     <section class="container-top">
-      <Header class="header-component" :style="{ top: headerTop }"></Header>
+      <Header  v-show="showComponent" class="header-component" :style="{ top: headerTop }"></Header>
       <RouterView></RouterView>
     </section>
-    <rodape></rodape>
+    <rodape v-show="showComponent"></rodape>
   </section>
 </template>
 <script>
@@ -19,6 +19,11 @@ export default {
       headerTop: "0",
       lastscroll: 0,
     };
+  },
+  computed:{
+    showComponent(){
+      return this.$route.name !== "nolitimere"
+    }
   },
   components: {
     Header,
